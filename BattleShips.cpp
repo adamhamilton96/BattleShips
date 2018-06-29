@@ -80,25 +80,25 @@ std::string generateAICoord(){ // Choose random AI coordinate
 	int randomLetter = rand() % 10;
 	switch(randomLetter){
 		case 0: coord.append("A");
-						break;
+		break;
 		case 1: coord.append("B");
-						break;
+		break;
 		case 2: coord.append("C");
-						break;
+		break;
 		case 3: coord.append("D");
-						break;
+		break;
 		case 4: coord.append("E");
-						break;
+		break;
 		case 5: coord.append("F");
-						break;
+		break;
 		case 6: coord.append("G");
-						break;
+		break;
 		case 7: coord.append("H");
-						break;
+		break;
 		case 8: coord.append("I");
-						break;
+		break;
 		case 9: coord.append("J");
-						break;
+		break;
 	}
 	int randomNumber = rand() % 10;
 	coord.append(std::to_string(randomNumber));
@@ -115,25 +115,25 @@ bool checkHit(int (&grid)[gridSize][gridSize], std::string input){
 	if(num >= 0 && num < 10 && command[0] <= 'J' && command[0] >= 'A'){
 		switch(command[0]){
 			case 'A': letter = 0;
-								break;
+			break;
 			case 'B': letter = 1;
-								break;
+			break;
 			case 'C': letter = 2;
-								break;
+			break;
 			case 'D': letter = 3;
-								break;
+			break;
 			case 'E': letter = 4;
-								break;
+			break;
 			case 'F': letter = 5;
-								break;
+			break;
 			case 'G': letter = 6;
-								break;
+			break;
 			case 'H': letter = 7;
-								break;
+			break;
 			case 'I': letter = 8;
-								break;
+			break;
 			case 'J': letter = 9;
-								break; 
+			break; 
 		}
 		if(grid[letter][num] == 1){
 			grid[letter][num] = 2;
